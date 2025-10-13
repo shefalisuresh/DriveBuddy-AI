@@ -1,0 +1,8 @@
+pandas
+numpy
+sklearn
+streamlit
+geopy
+groq
+streamlit_autorefresh
+gtts
