@@ -1,8 +1,9 @@
 pandas
 numpy
-sklearn
+scikit-learn
 streamlit
 geopy
 groq
-streamlit_autorefresh
-gtts
+streamlit-autorefresh
+gTTS
+plotly
