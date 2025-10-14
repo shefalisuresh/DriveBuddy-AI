@@ -80,7 +80,7 @@ B --> C[DriveBuddy Streamlit App]
 C -->|Groq API| D[AI Nudges & Summaries]
 C --> E[Google Maps + NY Rest Areas]
 E --> F[Rest Stop Suggestions]
-B --> G[Policy Risk Dashboard]
+B -->|Groq API| G[Policy Risk Dashboard]
 
 ```
 
