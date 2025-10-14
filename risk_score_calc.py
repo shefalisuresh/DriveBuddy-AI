@@ -82,7 +82,9 @@ def generate_csv():
     # -----------------------------
     # Predict risk scores (context fusion)
     # -----------------------------
-    df['risk_score'] = model.predict(X_scaled)
+    predicted_risk = model.predict(X_scaled)
+    # Round to 2 decimal places
+    df['risk_score'] = np.round(predicted_risk, 2)
     output_cols = [
         'timestamp', 'driver_name','policy_number', 'vehicle_id', 'gps_lat', 'gps_lon',
         'speed', 'braking', 'traffic_density','weather','road_type', 'stress_level','heart_rate','gsr','fatigue',"event", 'risk_score'
