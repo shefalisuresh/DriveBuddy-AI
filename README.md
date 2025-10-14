@@ -1,10 +1,10 @@
 
 
-# 🚦 DriveBuddy & Risk Analytics Dashboard
-
+# 🚦 Next-Gen Usage-Based Insurance: Context-Aware, Lifestyle-Linked Insurance
+ 
 ### 🔍 Overview
 
-**DriveBuddy** is an AI-driven smart driving alert and insurance risk analytics system that integrates **real-time telematics**, **Groq-powered AI insights**, and **Streamlit visualization**.
+This prototype is an AI-driven smart driving alert and insurance risk analytics system that integrates **real-time telematics**, **Groq-powered AI insights**, and **Streamlit visualization**.
 It consists of two primary modules:
 
 1. **DriveBuddy App** — Real-time driver monitoring and motivational nudges.
@@ -83,68 +83,6 @@ E --> F[Rest Stop Suggestions]
 B -->|Groq API| G[Policy Risk Dashboard]
 
 ```
-
----
-
-## ⚙️ **Installation & Setup**
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/drivebuddy-risk-dashboard.git
-cd drivebuddy-risk-dashboard
-```
-
-### 2️⃣ Install Dependencies
-
-Create a virtual environment and install the requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3️⃣ Setup Streamlit Secrets
-
-Create a `.streamlit/secrets.toml` file and add your Groq API key:
-
-```toml
-GROQ_API_KEY = "your_groq_api_key_here"
-```
-
-### 4️⃣ Run the Apps
-
-#### 🚦 DriveBuddy App
-
-```bash
-streamlit run drivebuddy_app.py
-```
-
-#### 📈 Risk Analytics Dashboard
-
-```bash
-streamlit run policy_dashboard.py
-```
-
----
-
-## 📁 **Project Structure**
-
-```
-📦 drivebuddy-risk-dashboard/
-├── drivebuddy_app.py            # Real-time AI Driving Alert System
-├── policy_dashboard.py          # Insurance Risk & Premium Analysis Dashboard
-├── risk_score_calc.py           # Dynamic CSV data generator
-├── fleet_context_fusion.csv     # Sample driver telematics dataset
-├── PolicyTransactions.csv       # Sample policy transaction data
-├── assets/                      # Audio alerts and icons
-│   ├── critical.mp4
-│   └── warning.mp3
-├── requirements.txt             # Python dependencies
-├── README.md                    # Project documentation (this file)
-└── .streamlit/
-    └── secrets.toml             # API keys and configuration
-```
-
 ---
 
 ## 🧰 **Dependencies**
@@ -186,18 +124,3 @@ streamlit run policy_dashboard.py
 
 ---
 
-## 🤝 **Contributors**
-
-* **Shefali Shetty** — Lead Developer & Architect
-* **OpenAI GPT-5 / Groq LLM** — AI-powered analysis and generation
-* **Community Data Sources** — NYS Open Data and fleet simulation inputs
-
----
-
-## 📜 **License**
-
-This project is licensed under the **MIT License** — feel free to modify and adapt with attribution.
-
----
-
-Would you like me to generate a matching **`requirements.txt`** (for easy setup on Streamlit Cloud or local Python)?
