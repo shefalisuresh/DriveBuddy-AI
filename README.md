@@ -54,14 +54,15 @@ Includes explainability, fairness monitoring, and a built-in disclaimer to ensur
    ```bash
    git clone https://github.com/<your-username>/fleet-risk-ai.git
    cd fleet-risk-ai
-```
+   ```
 2. **Run the Streamlit App**
    ```bash
-streamlit run app.py
-```
+   streamlit run app.py
+   ```
 **Output Files**
-`fleet_context_fusion.csv` → Contains risk scores with contextual fusion
-`validation_log.json` → Logs LLM judge verdicts and mismatches
+
+- `fleet_context_fusion.csv` → Contains risk scores with contextual fusion
+- `validation_log.json` → Logs LLM judge verdicts and mismatches
 
 ⚖️ Ethical AI & Responsible Use
 
