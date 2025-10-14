@@ -1,12 +1,18 @@
+
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.ensemble import RandomForestRegressor
 
 def generate_csv():
-    # -----------------------------
-    # Load telemetry CSV
-    # -----------------------------
+    """
+    
+    Processes telemetry data to detect driving events, simulate traffic conditions, 
+    encode contextual features, and train a Random Forest model to compute a composite 
+    driver risk score. The resulting context-fused dataset is saved as 
+    'fleet_context_fusion.csv' for downstream fleet analytics and risk assessment.
+    
+    """
     telemetry_df = pd.read_csv("telemetry_smart_gadget_alice.csv")
     
     # -----------------------------
