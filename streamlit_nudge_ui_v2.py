@@ -126,6 +126,22 @@ Driving Alert:
 # ==============================
 st.set_page_config(page_title="DriveBuddy 🚦", layout="wide")
 st.title("🚦 DriveBuddy — Smart Driving Alert System")
+st.markdown(
+    """
+    <div style="
+        background-color:#f0f2f6;
+        padding:12px 20px;
+        border-radius:10px;
+        border-left:5px solid #4b8bbe;
+        margin-bottom:15px;
+    ">
+        <b>Disclaimer:</b> Prototype demonstrates AI-driven nudges. 
+        Full solution will include bias checks, privacy safeguards, 
+        and regulatory compliance.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # --- Styling ---
 st.markdown("""
@@ -407,3 +423,4 @@ Use an uplifting tone and emojis where appropriate.
     except Exception as e:
         st.warning(f"Could not generate AI summary: {e}")
         
+
