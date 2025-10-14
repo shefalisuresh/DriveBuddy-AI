@@ -64,7 +64,9 @@ Includes explainability, fairness monitoring, and a built-in disclaimer to ensur
 - `fleet_context_fusion.csv` → Contains risk scores with contextual fusion
 - `validation_log.json` → Logs LLM judge verdicts and mismatches
 
-⚖️ Ethical AI & Responsible Use
+---
+
+## ⚖️ Ethical AI & Responsible Use
 
 This prototype ensures:
 - Transparency: Risk factors are interpretable.
