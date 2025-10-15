@@ -119,7 +119,7 @@ if st.button("Analyze Policy"):
             "Use consistent percentage adjustments across text and tables. "
             "If the driver's risk is low, apply discounts (negative adjustments); if high, apply penalties (positive adjustments). "
             "Ensure that the final premium summary table exactly matches the calculations described in the text. "
-            "The table must include: Coverage, Base Rate, Risk Adjustment (%), Event Adjustment (%), Stress/Fatigue Adjustment (%), and Final Premium ($). "
+            "The table must include: Coverage, Base Rate, Risk Adjustment (%), Stress/Fatigue Adjustment (%), and Final Premium ($). "
             "Finally, provide a short human-readable explanation of the overall driver risk profile and premium justification. Please don't show any python script to calculate premiums"
             "Present all calculations step-by-step in a clear, structured, human-readable format. "
             "Use consistent numeric formatting and avoid mixing up numbers with calculations. "
@@ -137,7 +137,6 @@ if st.button("Analyze Policy"):
             "- Identify possible causes for risky behavior.\n"
             "- Apply risk-based premium adjustments as follows:\n"
             "   * Risk Adjustment → +10% if avg risk_score > 0.5, -5% if < 0.3.\n"
-            "   * Event Adjustment → +20% if harsh braking or overspeeding detected, -5% if none.\n"
             "   * Stress/Fatigue Adjustment → +15% if avg stress > 40 or fatigue > 30, -5% if both < 20.\n"
             "- Only include Personal Automobile Liability Coverage in the premium table.\n"
             "- Display the final results in a professional, structured report with:\n"
@@ -210,4 +209,5 @@ if st.button("Analyze Policy"):
 
                 with st.expander("View Full Driver Metrics Data"):
                     st.dataframe(driver_df, use_container_width=True)
+
 
