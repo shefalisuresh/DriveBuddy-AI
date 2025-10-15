@@ -7,3 +7,4 @@ groq
 streamlit-autorefresh
 gTTS
 plotly
+pyodbc
