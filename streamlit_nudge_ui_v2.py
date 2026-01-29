@@ -172,7 +172,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Groq API ---
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+client = Groq(api_key="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")
 
 # --- Load CSV data ---
 try:
@@ -423,5 +423,6 @@ Use an uplifting tone and emojis where appropriate.
     except Exception as e:
         st.warning(f"Could not generate AI summary: {e}")
         
+
 
 
