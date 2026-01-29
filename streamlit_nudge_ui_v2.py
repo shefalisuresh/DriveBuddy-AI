@@ -372,7 +372,7 @@ if not st.session_state.finished:
             )
 
             # Display static map
-            st.image(google_static_map_url, caption="Route to Nearest Rest Area", use_container_width=True)
+            st.image(google_static_map_url, caption="Route to Nearest Rest Area")
 
             # --- Clickable Live Directions ---
             maps_directions_url = (
@@ -423,4 +423,5 @@ Use an uplifting tone and emojis where appropriate.
     except Exception as e:
         st.warning(f"Could not generate AI summary: {e}")
         
+
 
